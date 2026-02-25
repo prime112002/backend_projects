@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.completed {
+  text-decoration: line-through;
+  color: rgb(223, 69, 69);
+}
