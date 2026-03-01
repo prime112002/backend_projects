@@ -12,7 +12,9 @@ app.get("/",(req,res)=>{
 app.post("/data",(req,rse)=>{
     res.json({message:"hii"})
 })
-
+app.get("/dashboard",(req,res)=>{
+    res.send("welcome")
+})
 app.listen(3000,()=>{
     console.log('app is listening')
 })
