@@ -17,3 +17,18 @@ Promise0ne.then((result) => {
 }).catch((err) => {
   console.log(err);
 });
+
+new Promise(function (resolve, reject) {
+  error = true;
+  if ((erorr = false)) {
+    resolve("data is wrong");
+  } else {
+    reject("data is corrupted");
+  }
+})
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
