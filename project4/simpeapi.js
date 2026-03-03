@@ -17,6 +17,13 @@ const user = [
     role: "DevOps Engineer",
     experience: 3,
   },
+  ,
+  {
+    id: 4,
+    name: "Bahul",
+    role: "DevOps Engineer",
+    experience: 3,
+  },
 ];
 
 //get all the name,filter using <1 exp,total exp
