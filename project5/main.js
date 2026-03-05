@@ -1,13 +1,31 @@
-const { createElement } = require("react");
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("input");
+  const btn = document.getElementById("inp-btn");
+  const list = document.getElementById("listiteam");
+  const task = JSON.parse(localStorage.getItem("task")) || [];
 
-const input = document.getElementById("input");
-const btn = document.getElementById("inp-btn");
-const list = document.getElementById("listiteam");
+  task.forEach((element) => {
+    rendertask(element);
+  });
+  btn.addEventListener("click", function () {
+    const data = input.value.trim();
+    if (input.value == "") return;
 
-btn.addEventListener("click", function () {
-  let data = input.value;
-  const sub = createElement("li");
-  sub = data;
-  if (input.value === "") return;
-  list.appendChild(sub);
+    const tasktext = {
+      id: Date.now(),
+      text: data,
+      completed: false,
+    };
+    task.push(tasktext);
+    savetask();
+    input.value = "";
+    console.log(task);
+  });
+
+  function rendertask(tasks) {
+    console.log(tasks);
+  }
+  function savetask() {
+    localStorage.setItem("task", JSON.stringify(task));
+  }
 });
