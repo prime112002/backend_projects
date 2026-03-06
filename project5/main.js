@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("input");
   const btn = document.getElementById("inp-btn");
@@ -23,7 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function rendertask(tasks) {
-    console.log(tasks);
+    const li = createElement("li");
+    li = data;
+    list.appendChild(li);
   }
   function savetask() {
     localStorage.setItem("task", JSON.stringify(task));
