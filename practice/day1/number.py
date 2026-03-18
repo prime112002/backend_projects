@@ -62,3 +62,16 @@ else:
     
 
 """
+"""
+5)
+number of digit in number
+num=1221567
+n=num
+rev=0
+
+while(n>0):
+    last=n%10
+    rev=rev+1
+    n=n//10
+print(rev)
+"""
