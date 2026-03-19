@@ -75,3 +75,19 @@ while(n>0):
     n=n//10
 print(rev)
 """
+
+"""
+find out the second largest digit in number
+num=1234
+first=second=float('-inf')
+while num > 0:
+    last=num%10
+    if last > first:
+        second=first
+        first=last
+    elif last > second and last !=first:
+        second=last
+    num=num//10
+
+print(second)
+"""
