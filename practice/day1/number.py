@@ -91,3 +91,24 @@ while num > 0:
 
 print(second)
 """
+
+"""
+finding out armstrong
+def armstrong(number):
+    if number < 0:
+        return false
+        
+    count=len(str(number))
+    n=number
+    res=0
+    
+    while n>0:
+        last=n%10
+        res=res+last**count
+        n=n//10
+    return res==number
+    
+    
+print(armstrong(9474))
+
+"""
